@@ -1,0 +1,10 @@
+.hero{
+    margin-left: 10vw;
+    margin-top: 5%;
+    width: 30vw;
+    transition: 1s;
+}
+
+.dark .hero{
+    margin-left: 55vw;
+}
