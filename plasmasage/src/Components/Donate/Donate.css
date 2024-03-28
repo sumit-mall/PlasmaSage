@@ -1,0 +1,75 @@
+.blood-donation-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  color: black;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blood-donation-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blood-donation-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blood-donation-container label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blood-donation-container input,
+.blood-donation-container select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.blood-donation-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blood-donation-container button:hover {
+  background-color: #0056b3;
+}
+
+.blood-donation-container .message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blood-donation-container .message p {
+  font-weight: bold;
+}
+
+.blood-donation-container.success {
+ /* Green color */
+  color: #000000;
+  box-shadow: 25px 25px 50px green;
+}
+
+.blood-donation-container.error {
+  color: rgb(0, 0, 0);
+  box-shadow: 25px 25px 50px red;
+}
+
+.dark .blood-donation-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
