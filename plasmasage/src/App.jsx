@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 import Hero from './Components/HeroSection/HeroSection'
 import Donate from './Components/Donate/Donate'
 import Bloodbank from './Components/BloodBank/Bloodbank'
@@ -39,6 +40,7 @@ const App = () => {
     <div className={`container ${theme}`}>
       <Navbar  theme={theme} setTheme={setTheme}/>
       <RouterProvider router={router}/>
+      <Footer  theme={theme} setTheme={setTheme}/>
     </div>
   )
 }
