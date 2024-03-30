@@ -1,15 +1,14 @@
-.donation-form-container {
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 40px;
-  color: black;
+.blood-request-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
   background: linear-gradient(to bottom right, #ffffff, #e4e4e4);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   border-radius: 10px;
-  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 25px 25px 50px red;
 }
 
-.donation-form-container h1 {
+h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -25,9 +24,9 @@ label {
 }
 
 input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="time"] {
+input[type="tel"],
+select,
+textarea {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -47,11 +46,13 @@ button:hover {
   background-color: #0056b3;
 }
 
-.confirmation-message {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.confirmation-message p {
-  font-weight: bold;
-}
+.dark .blood-request-form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to bottom right, #000000 80%, #ffffff);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 25px 25px 50px rgb(0, 0, 0);
+  }

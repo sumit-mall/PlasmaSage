@@ -43,8 +43,9 @@ li {
   font-family: "League Spartan";
   text-align: center;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
+  margin-right: 7vw;
 }
 
 li:hover{

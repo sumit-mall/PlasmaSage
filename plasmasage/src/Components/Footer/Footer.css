@@ -2,10 +2,23 @@
   color: #000000;
   padding: 20px 0;
   text-align: center;
-  position: fixed;
   width: 100%;
   bottom: 0;
   font-size: 20px;
+  position: fixed;
+  justify-content: center;
+  display: inline-block;
+  z-index: 1;
 }
 
-
+.dark .footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+  width: 100%;
+  bottom: 0;
+  font-size: 20px;
+  position: fixed;
+  justify-content: center;
+  display: inline-block;
+  z-index: 0;
+}

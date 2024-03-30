@@ -1,11 +1,11 @@
 /* About.css */
 
-.about-container {
-    padding: 50px;
-}
+    .about-container {
+        padding: 50px;
+    }
 
 .about-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
@@ -26,10 +26,7 @@
     margin-bottom: 20px;
 }
 
-.image-container {
-    position: relative;
-    
-  }
+
 
   .banner{
     opacity: 10%;
@@ -46,23 +43,3 @@
     background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for better contrast */
   }
 
-
-.social-links {
-    margin-top: 40px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-    transform: scale(1.1);
-}

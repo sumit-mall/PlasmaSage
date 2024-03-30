@@ -18,16 +18,14 @@ const About = () => {
                 people to donate blood and save lives.
               </p>
               <h2>Medical Blood Donation Statistics (India)</h2>
-              <ul>
-                <li>
-                  Approximately 12 million units of blood are needed annually in
-                  India.
-                </li>
-                <li>
-                  Only about 1% of the eligible Indian population donates blood.
-                </li>
-                <li>Every two seconds, someone in India needs blood.</li>
-              </ul>
+              <p>
+                Approximately 12 million units of blood are needed annually in
+                India.
+              </p>
+              <p>
+                Only about 1% of the eligible Indian population donates blood.
+              </p>
+              <p>Every two seconds, someone in India needs blood.</p>
               <h2>Our Vision</h2>
               <p>
                 Our vision is to create a society where no one dies due to the
@@ -36,17 +34,6 @@ const About = () => {
                 that every patient in need receives timely and adequate blood
                 transfusions.
               </p>
-              <div className="social-links">
-                <a href="https://facebook.com">
-                  <img src="facebook_icon.png" alt="Facebook" />
-                </a>
-                <a href="https://twitter.com">
-                  <img src="twitter_icon.png" alt="Twitter" />
-                </a>
-                <a href="https://instagram.com">
-                  <img src="https://icons8.com/icon/uLWV5A9vXIPu/facebook" alt="facebook" />
-                </a>
-              </div>
             </div>
           </div>
         </div>

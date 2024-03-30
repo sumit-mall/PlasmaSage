@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Donate.css'; // Import CSS file for styling
+import hero from '../../assets/hero-dark.png'
+import './Donate.css'; 
 
 const Donate = () => {
   const [name, setName] = useState('');
@@ -21,15 +22,13 @@ const Donate = () => {
     }
   };
 
-  const handleRedirect = () => {
-    setRedirectToDonationForm(true);
-  };
 
   if (redirectToDonationForm) {
     return <Redirect to="/donationform" />; // Redirect to donation form
   }
 
   return (
+    
     <div className={`blood-donation-container ${isEligible ? 'success' : 'error'}`}>
       <h1>Blood Donation Eligibility Check</h1>
       {isEligible === null ? (
@@ -63,7 +62,7 @@ const Donate = () => {
         <button type="submit">Check Eligibility</button>
       </form>
       )
-
+      
       : isEligible ? (
         <div className="message success">
           <p>Congratulations, you are eligible to donate blood!</p>
@@ -74,6 +73,7 @@ const Donate = () => {
           <p>Sorry, you are not eligible to donate blood.</p>
         </div>
       )}
+      
     </div>
   );
 };

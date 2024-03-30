@@ -20,6 +20,7 @@ const Navbar = ({theme,setTheme}) => {
         
         <a href='/'><li className="nav-home">Home</li></a>
         <a href='/donate'><li className="nav-donate">Donate</li></a>
+        <a href='/request'><li className="nav-request">Request</li></a>
         <a href='/bloodbank'><li className="nav-bloodbank">BloodBank</li></a>
         <a href='/about'><li className="nav-about">About</li></a>
         

@@ -1,8 +1,5 @@
 
 .hero {
-    background-image: url('blood_bank_bg.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -33,6 +30,7 @@
 .hero-image img {
     margin-top: 100px;
     width: 555px;
+    border-radius: 100%;
 }
 
 .red{

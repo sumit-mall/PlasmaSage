@@ -1,9 +1,11 @@
 .blood-donation-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 850px;
+  margin: 70px auto;
+  margin-bottom: 120px;
+  padding: 40px;
   color: black;
-  background-color: #f9f9f9;
+  background: linear-gradient(to bottom right, #ffffff, #e4e4e4);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -38,9 +40,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 25px;
 }
 
 .blood-donation-container button:hover {
+  margin: 20px;
   background-color: #0056b3;
 }
 
@@ -54,7 +58,7 @@
 }
 
 .blood-donation-container.success {
- /* Green color */
+  /* Green color */
   color: #000000;
   box-shadow: 25px 25px 50px green;
 }
@@ -64,12 +68,25 @@
   box-shadow: 25px 25px 50px red;
 }
 
-.dark .blood-donation-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+.dark .blood-donation-container.success {
+  /* Green color */
+  color: #ffffff;
+  box-shadow: 25px 25px 50px green;
+}
+
+.dark .blood-donation-container.error {
   color: rgb(255, 255, 255);
-  background-color: #000000;
+  box-shadow: 25px 25px 50px rgb(0, 0, 0);
+}
+
+.dark .blood-donation-container {
+  max-width: 850px;
+  margin: 70px auto;
+  margin-bottom: 120px;
+  padding: 40px;
+  color: white;
+  background: linear-gradient(to bottom right, #000000 80%, #ffffff);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 25px 25px 50px rgb(0, 0, 0);
 }

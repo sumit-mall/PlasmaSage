@@ -2,15 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;  
+  font-family: "Open Sans", sans-serif; 
+  
 }
 
 .container{
   width: 100vw;
   min-height: 100vh;
   transition: 0.5s;
+  background: linear-gradient(to bottom right, #ffffffa0 75%, #ff5833bc);
 }
 
 .container.dark{
-  background: #222;
+  background: linear-gradient(to bottom right, #6b6b6b, #1C1C1C);
 }
