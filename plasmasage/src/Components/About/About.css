@@ -40,6 +40,6 @@
     left: 50%; /* Position text horizontally at the image center */
     transform: translate(-50%, -50%); /* Offset text to center based on its own size */
     color: white; /* Set text color for better visibility on the image */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background for better contrast */
+    background-color: pink; /* Optional semi-transparent background for better contrast */
   }
 
