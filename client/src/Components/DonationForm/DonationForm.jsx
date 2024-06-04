@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './DonationForm.css'; 
 
@@ -16,7 +15,6 @@ const DonationForm = () => {
     tomorrow.setDate(tomorrow.getDate() + 1);
 
     if (selectedDate.getTime() < tomorrow.getTime()) {
-      // Set the date to tomorrow if selected date is earlier
       selectedDate.setDate(tomorrow.getDate());
       setAppointmentDateTime(selectedDate.toISOString().slice(0, 16));
     } else {
@@ -24,10 +22,36 @@ const DonationForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle form submission, for now, let's just set isScheduled to true
-    setIsScheduled(true);
+
+    const formData = {
+      name,
+      age: parseInt(age),
+      birthday: new Date(birthday),
+      appointmentDateTime: new Date(appointmentDateTime),
+      bloodGroup,
+    };
+
+    try {
+      const response = await fetch('http://localhost:8000/api/donationRoutes/donation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Donation appointment scheduled successfully');
+        setIsScheduled(true);
+      } else {
+        const errorData = await response.json();
+        console.error('Failed to schedule donation:', errorData.message);
+      }
+    } catch (error) {
+      console.error('Error scheduling donation:', error);
+    }
   };
 
   return (

@@ -17,23 +17,40 @@ const Request = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle form submission
-    console.log({
+    const requestData = {
       name,
       contact,
       timeFrame,
       reason,
-      selectedBloodTypes
-    });
-    // Reset the form fields after submission
-    setName('');
-    setContact('');
-    setTimeFrame('');
-    setReason('');
-    setSelectedBloodTypes([]);
-    setSubmitted(true);
+      selectedBloodTypes,
+    };
+
+    try {
+      const response = await fetch('http://localhost:8000/api/requestRoutes/request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+      });
+
+      if (response.ok) {
+        console.log('Request submitted successfully');
+        // Reset the form fields after submission
+        setName('');
+        setContact('');
+        setTimeFrame('');
+        setReason('');
+        setSelectedBloodTypes([]);
+        setSubmitted(true);
+      } else {
+        console.error('Failed to submit request');
+      }
+    } catch (error) {
+      console.error('Error submitting request:', error);
+    }
   };
 
   return (
@@ -51,14 +68,14 @@ const Request = () => {
             <div className="blood-types-selection">
               <p>Selected Blood Types:</p>
               {selectedBloodTypes.map(bloodType => (
-                <button key={bloodType} className="selected-blood-type" onClick={() => handleBloodTypeClick(bloodType)}>{bloodType}</button>
+                <button key={bloodType} type="button" className="selected-blood-type" onClick={() => handleBloodTypeClick(bloodType)}>{bloodType}</button>
               ))}
             </div>
 
             <div className="blood-types-selection">
               <p>Available Blood Types:</p>
               {['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'].map(bloodType => (
-                <button key={bloodType} className={`available-blood-type ${selectedBloodTypes.includes(bloodType) ? 'selected' : ''}`} onClick={() => handleBloodTypeClick(bloodType)}>{bloodType}</button>
+                <button key={bloodType} type="button" className={`available-blood-type ${selectedBloodTypes.includes(bloodType) ? 'selected' : ''}`} onClick={() => handleBloodTypeClick(bloodType)}>{bloodType}</button>
               ))}
             </div>
 
