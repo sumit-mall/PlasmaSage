@@ -1,0 +1,113 @@
+
+/* Container Styles */
+.blood-donation-container {
+  max-width: 850px;
+  margin: 45px auto 120px auto;
+  padding: 40px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Heading Styles */
+.blood-donation-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.blood-donation-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blood-donation-container label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.blood-donation-container input,
+.blood-donation-container select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button Styles */
+.blood-donation-container button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  align-self: center;
+  margin-top: 15px;
+}
+
+.blood-donation-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.blood-donation-container button:active {
+  background-color: #003d80;
+  transform: scale(0.95);
+}
+
+/* Message Styles */
+.blood-donation-container .message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blood-donation-container .message p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Success and Error Styles */
+.blood-donation-container.success {
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4);
+}
+
+.blood-donation-container.error {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+}
+
+/* Dark Mode Styles */
+.dark .blood-donation-container {
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark .blood-donation-container h1 {
+  color: #ffffff;
+}
+
+.dark .blood-donation-container.success {
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4);
+}
+
+.dark .blood-donation-container.error {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+}
+
+.dark body {
+  background: linear-gradient(to bottom right, #000000, #333333);
+}

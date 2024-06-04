@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  transition: 0.5s;
+}
+
+.container.dark{
+  background: linear-gradient(to bottom right, #6b6b6b, #1C1C1C);
+}

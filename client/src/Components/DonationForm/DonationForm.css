@@ -1,0 +1,95 @@
+
+/* Container Styles */
+.donation-form-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  color: black;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Heading Styles */
+.donation-form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+  align-self: flex-start;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"] {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1e7e34;
+  transform: scale(0.95);
+}
+
+/* Confirmation Message Styles */
+.confirmation-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirmation-message p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #28a745;
+}
+
+/* Dark Mode Styles */
+.dark .donation-form-container {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.dark body {
+  background: linear-gradient(to bottom right, #000000, #333333);
+}

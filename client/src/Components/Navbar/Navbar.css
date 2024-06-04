@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background: #fff;
+  font-size: 40px;
+  justify-content: space-between;
+}
+
+.navbar a{
+  color: inherit;
+}
+@media only screen and (max-width: 768px) {
+  /* Responsive adjustments for smaller screens */
+  .navbar {
+    flex-direction: column;
+  }
+  li {
+    padding-top: 20px;
+    padding-bottom: 20px; /* Stack content vertically on small screens */
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+  .toggle-icon{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  /* Add media query for even smaller screens (adjust as needed) */
+}
+
+.logo {
+  margin-left: 30px;
+  width: 130px;
+  min-width: 70px;
+  min-height: 70px;
+  cursor: pointer;
+}
+
+li {
+  justify-content: center;
+  gap: 20rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 7vw;
+}
+
+li:hover{
+    color: red;
+    font-size: 28px;
+}
+
+.toggle-icon {
+  margin-right: 40px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
