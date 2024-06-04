@@ -14,4 +14,15 @@ router.post('/donation', async (req, res) => {
   }
 });
 
+// Route to fetch all donations
+router.get('/donation', async (req, res) => {
+  try {
+    const donations = await Donor.find();
+    res.status(200).json(donations);
+  } catch (error) {
+    console.error('Error fetching donations:', error.message);
+    res.status(500).json({ message: 'An error occurred while fetching donations.' });
+  }
+});
+
 module.exports = router;

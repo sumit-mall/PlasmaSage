@@ -1,0 +1,42 @@
+.admin-container {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .admin-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .donations-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .donations-table thead {
+    background-color: #f4f4f4;
+  }
+  
+  .donations-table th,
+  .donations-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .donations-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .donations-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .donations-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
