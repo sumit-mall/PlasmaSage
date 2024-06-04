@@ -7,9 +7,8 @@ import Request from './Components/Request/Request'
 import Bloodbank from './Components/BloodBank/Bloodbank'
 import About from './Components/About/About'
 import DonationForm from './Components/DonationForm/DonationForm'
-import Admin from './Components/Admin/Admin'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { withAuthenticationRequired } from '@auth0/auth0-react';
+import AdminDonate from './Components/Admin/AdminDonate'
+import AdminRequest from './Components/Admin/AdminRequest'
 
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
 
@@ -49,8 +48,12 @@ const App = () => {
       element: <><DonationForm /></>
     },
     {
-      path: "/admin",
-      element: <><Admin /></>
+      path: "/adminDonate",
+      element: <><AdminDonate /></>
+    },
+    {
+      path: "/adminRequest",
+      element: <><AdminRequest /></>
     }
   ])
 

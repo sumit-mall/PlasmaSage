@@ -39,12 +39,12 @@
 
 li {
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
   text-align: center;
   display: inline-block;
   font-size: 30px;
   cursor: pointer;
-  margin-right: 7vw;
+  margin-right: 2vw;
 }
 
 li:hover{
