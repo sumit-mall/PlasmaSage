@@ -5,6 +5,7 @@
   background: #fff;
   font-size: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a{
@@ -13,6 +14,7 @@
 @media only screen and (max-width: 768px) {
   /* Responsive adjustments for smaller screens */
   .navbar {
+
     flex-direction: column;
   }
   li {

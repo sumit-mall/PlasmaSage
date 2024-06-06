@@ -32,12 +32,17 @@ const Navbar = ({ theme, setTheme }) => {
         <a href="/">
           <li className="nav-home">Home</li>
         </a>
-        <a href="/donate">
+        <div>
+        { isAuthenticated &&  <a href="/donate">
           <li className="nav-donate">Donate</li>
-        </a>
+        </a>}
+        </div>
+        <div>{ isAuthenticated && 
         <a href="/request">
           <li className="nav-request">Request</li>
         </a>
+        }
+        </div>
         <a href="/bloodbank">
           <li className="nav-bloodbank">BloodBank</li>
         </a>
