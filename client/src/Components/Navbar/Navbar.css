@@ -64,3 +64,16 @@ li:hover{
   background: #000;
   color: #fff;
 }
+
+
+.user{
+  background-color: gray;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 11px;
+  color: white;
+}
+
+.user:hover{
+  color: blue;
+}

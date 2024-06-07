@@ -49,7 +49,7 @@ const Navbar = ({ theme, setTheme }) => {
         <a href="/about">
           <li className="nav-about">About</li>
         </a>
-        <li>{isAuthenticated && <p>{user.name}</p>}</li>
+        <li>{isAuthenticated && <p className="user">{user.name}</p>}</li>
         {isAuthenticated ? (
           <li>
             <button
